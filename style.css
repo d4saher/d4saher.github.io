@@ -73,6 +73,9 @@
         max-width: 800px;
     }
 
+    .navbar .container-fluid {
+        display: inline;
+    }
     .navbar-nav {
         display: flex;
         flex: 1;
