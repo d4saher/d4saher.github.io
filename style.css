@@ -161,6 +161,7 @@
         background-color: transparent;
         border: 0;
         width: 10px;
+        transform: none;
     }
 
     .language-switcher button:hover, #theme-toggle:hover {
@@ -172,6 +173,7 @@
     .dropdown-item {
         width: min-content;
     }
+
     
     #theme-toggle {
         font-size: 30px;
