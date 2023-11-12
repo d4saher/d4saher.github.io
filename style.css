@@ -1,38 +1,98 @@
+* {
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #333;
+    color: #fff;
+}
+
+.light-mode {
+    background-color: #eeeeee;
     color: #333;
 }
 
+/* .container-fluid {
+    padding: 0;
+} */
+
+html {
+    scroll-behavior: smooth;
+    font-family: League Spartan,verdana,monaco;
+    font-weight: 800;
+}
+
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(216, 210, 210, 0.1);
+    color: #eeeeee;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    white-space: nowrap;
 }
 
 header .logo {
-    font-size: 24px;
+    font-size: 32px;
+    font-family: League Spartan,verdana,monaco;
+    font-weight: 800;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 6px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.highlight-text {
+    color: #dd8818;
+}
+
+.navbar-nav {
     display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-right: 10%;
 }
 
-nav ul li {
-    margin-left: 20px;
+.navbar-toggler-btn{
+    padding-right: 10%;
+    width: 100px;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.navbar-toggler{
+    
+
+}
+
+
+.collapsing .nav-link{
+    color: rgba(216, 210, 210, 0);
+}
+
+
+
+.nav-link {
+    font-size: 20px;
+    color: #eeeeee;
+    font-family: League Spartan,verdana,monaco;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: #dd8818;
+    transition: 0.3s;
+}
+
+.nav-bar-toggler {
+    margin-right: 20px;
+}
+.nav-item {
+}
+
+.language-toggler {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 section {
@@ -46,14 +106,32 @@ footer {
     color: #fff;
 }
 
-.language-switcher button, #theme-toggle {
+.language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100;
+}
+
+.language-switcher button {
     background-color: #555;
     color: #fff;
     border: none;
-    padding: 5px 10px;
     cursor: pointer;
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin-right: 0;
 }
 
 .language-switcher button:hover, #theme-toggle:hover {
     background-color: #777;
+}
+
+#theme-toggle {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    background-color: #555;
 }
