@@ -52,6 +52,9 @@ header .logo {
 }
 
 @media (max-width: 496px) {
+    header .logo {
+        margin-right: 2%;
+    }
     .mobile-text {
         display: block;
     }
@@ -62,7 +65,6 @@ header .logo {
 
 .navbar-nav {
     display: flex;
-    justify-content: flex-end;
     flex-grow: 1;
     margin-right: 10%;
 }
@@ -70,11 +72,6 @@ header .logo {
 .navbar-toggler-btn{
     padding-right: 10%;
     width: 100px;
-}
-
-.navbar-toggler{
-    
-
 }
 
 
