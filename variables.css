@@ -1,0 +1,14 @@
+/* Estilos por defecto (tema claro) */
+:root {
+    --primary-color: #dd8818;
+    --background-color: #ffffff;
+    --text-color: #333333;
+}
+
+/* Tema oscuro */
+.dark-mode {
+    --primary-color: #dd8818;
+    --background-color: #333333;
+    --background-secundary: #555555;
+    --text-color: #ffffff;
+}
