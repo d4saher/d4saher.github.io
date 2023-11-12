@@ -47,6 +47,19 @@ header .logo {
     color: #dd8818;
 }
 
+.mobile-text {
+    display: none;
+}
+
+@media (max-width: 496px) {
+    .mobile-text {
+        display: block;
+    }
+    .desktop-text {
+        display: none;
+    }
+}
+
 .navbar-nav {
     display: flex;
     justify-content: flex-end;
