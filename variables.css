@@ -1,7 +1,10 @@
 /* Estilos por defecto (tema claro) */
 :root {
-    --primary-color: #dd8818;
+    --primary-color: hsl(34, 80%, 48%);
     --background-color: #ffffff;
+    --background-color-trans: rgba(255, 255, 255, 0.6);
+    --background-secundary: #f2f2f2;
+    --background-hover: #f2f2f2bd;
     --text-color: #333333;
 }
 
@@ -9,6 +12,8 @@
 .dark-mode {
     --primary-color: #dd8818;
     --background-color: #333333;
+    --background-color-trans: rgba(51, 51, 51, 0.6);
     --background-secundary: #555555;
+    --background-hover: #666666f3;
     --text-color: #ffffff;
 }

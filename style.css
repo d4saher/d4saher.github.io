@@ -20,10 +20,17 @@
     }
     
     header {
+        background-color: var(--background-color-trans);
         color: var(--text-color);
+        position: fixed;
         display: flex;
-        margin-top: 10px;
         white-space: nowrap;
+        backdrop-filter: blur(10px);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 0;
+        top: 0;
+        width: 100%;
     }
     
     header .logo {
@@ -37,7 +44,7 @@
     
     header .language-switcher{
         align-self: start;
-        padding-top: 6px;
+        padding-top: 4px;
         margin-top: 6px;
     }
     
@@ -61,10 +68,14 @@
         }
     }
     
+    .navbar {
+        width: 50%;
+    }
+
     .navbar-nav {
         display: flex;
         flex-grow: 1;
-        margin-right: 10%;
+        margin-right: 5%;
     }
     
     .navbar-toggler {
@@ -74,7 +85,7 @@
     }
     
     .navbar-toggler-btn{
-        padding-right: 10%;
+        padding-right: 5%;
         width: 100px;
     }
     
@@ -106,49 +117,68 @@
         margin-right: 20px;
     }
     
-    .language-toggler {
+    .settings{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        right: 80%;
+        padding-right: 10%;
+    }
+    
+    .language-switcher button {
+        color: var(--text-color);
+        cursor: pointer;
+        margin-right: 10px;
+        border-color: var(--primary-color);
+    }
+
+    .lang-btn {
+        color: var(--text-color);
+        cursor: pointer;
+        margin-right: 10px;
+        border-color: var(--primary-color);
+        background-color: var(--background-secundary);
+    }
+
+    .lang-menu {
+        background-color: rgba(216, 210, 210, 0);
+        border: 0;
+        width: 10px;
+    }
+
+    .language-switcher button:hover, #theme-toggle:hover {
+        background-color: var(--background-hover);
+        color: var(--text-color);
+        border-color: var(--primary-color);
+    }
+
+    .dropdown-item {
+        width: min-content;
+    }
+    
+    #theme-toggle {
         top: 0;
         display: block;
         height: 100%;
+        background-color: var(--background-secundary);
+        color: var(--text-color);
+        margin-top: 10px;
+        border-color: var(--primary-color);
     }
-    
-    section {
+
+    #theme-toggle:hover {
+        background-color: var(--background-hover);
+    }
+
+    .content {
+        margin-top: 80px;
         padding: 20px;
     }
-    
+
     footer {
         text-align: center;
         padding: 10px;
         background-color: var(--background-color);
         color: var(--text-color);
-    }
-    
-    .language-switcher {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100;
-    }
-    
-    .language-switcher button {
-        background-color: var(--background-secundary);
-        color: var(--text-color);
-        border: none;
-        cursor: pointer;
-    }
-    
-    .dropdown-menu {
-        padding: 0;
-        margin-right: 0;
-    }
-    
-    .language-switcher button:hover, #theme-toggle:hover {
-        background-color: var(--background-secundary);
-    }
-    
-    #theme-toggle {
-        display: flex;
-        align-items: center;
-        height: 50%;
-        background-color: var(--background-secundary);
     }
