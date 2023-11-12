@@ -70,7 +70,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        max-width: 800px;
+        max-width: 600px;
     }
 
     .navbar .container-fluid {
@@ -139,6 +139,7 @@
         justify-content: center;
         height: 100%;
         right: 80%;
+        padding-right: 20px;
     }
     
     .language-switcher button {
@@ -173,17 +174,24 @@
     }
     
     #theme-toggle {
+        font-size: 30px;
+        background-color: transparent;
+        border-color: transparent;
         top: 0;
-        display: block;
-        height: 100%;
-        background-color: var(--background-secundary);
-        color: var(--text-color);
+        display: flex;
+        height: 40px;
+        width: 40px;
         margin-top: 10px;
-        border-color: var(--primary-color);
+        border-radius: 100px;
+        align-items: center;
+        justify-content: center;
     }
 
     #theme-toggle:hover {
-        background-color: var(--background-hover);
+        font-size: 35px;
+        background-color: transparent;
+        border-color: transparent;
+        transition: all 0.3s ease-in-out;
     }
 
     .content {
