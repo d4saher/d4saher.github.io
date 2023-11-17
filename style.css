@@ -159,9 +159,8 @@
 
     .lang-menu {
         background-color: transparent;
-        border: 0;
-        width: 10px;
-        transform: none;
+        min-width: 50px;
+        border: none;
     }
 
     .language-switcher button:hover, #theme-toggle:hover {
@@ -169,11 +168,6 @@
         color: var(--text-color);
         border-color: var(--primary-color);
     }
-
-    .dropdown-item {
-        width: min-content;
-    }
-
     
     #theme-toggle {
         font-size: 30px;
@@ -184,6 +178,7 @@
         height: 40px;
         width: 40px;
         margin-top: 10px;
+        padding-left: 20px;
         border-radius: 100px;
         align-items: center;
         justify-content: center;
